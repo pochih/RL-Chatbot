@@ -1,0 +1,1 @@
+python2.7 python/simulate.py $1 $2

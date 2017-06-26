@@ -1,0 +1,1 @@
+python2.7 python/test.py $1 $2 $3
