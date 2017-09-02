@@ -6,7 +6,7 @@ This chatbot is trained by seq2seq model described in [Sequence to Sequence -- V
 Then use the reward function described in [Deep Reinforcement Learning for Dialogue Generation](https://arxiv.org/abs/1606.01541) to increase the performance.
 
 ## chatbot's results
-you can find chatbot's results in tmp/ directory
+you can find chatbot's results in *tmp/* directory
 
 neural networks' configs of those results are described in the filename
 
@@ -53,7 +53,8 @@ neural networks' configs of those results are described in the filename
 
 >A: Ah you'll need all the money I need your help.
 
-## generate sentence by pre-trained model
+## generate response by pre-trained model
+generate a response from a given request
 ```bash
 ./download.sh
 ```
@@ -66,53 +67,64 @@ neural networks' configs of those results are described in the filename
 
 \<INPUT FILE\> is the testing data
 
-you can just use data/sample_input.txt or data/sample_input_old.txt in this repository for convenience
+you can just use *data/sample_input.txt* or *data/sample_input_old.txt* in this repository for convenience
+
+or you can create your own testing data (copy the format from abovementioned files)
 
 \<OUTPUT FILE\> is the output of input file
 
 type any filename you want
 
 ## simulate a dialog by pre-trained model
+generate a dialog, which starts from a given request
 ```bash
 ./download.sh
 ```
 ```bash
 ./simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
-\<PATH TO MODEL\>
-type model/Seq2Seq/model-77 to generate seq2seq dialog
+for \<PATH TO MODEL\>
 
-type model/RL/model-56-3000 to generate RL dialog
+to generate seq2seq dialog, type model/Seq2Seq/model-77
+
+to generate RL dialog, type model/RL/model-56-3000
 
 \<SIMULATE TYPE\> can be 1 or 2
 
 the number represents # of former sentence(s) that chatbot considers
 
-if you choose 1, chatbot will only considers user's utterance
+if you choose 1, chatbot only considers user's utterance
 
 if you choose 2, chatbot will considers user's utterance and chatbot's last utterance
 
 \<INPUT FILE\> is the testing data
 
-you can just use data/sample_input.txt or data/sample_input_old.txt in this repository for convenience
+you can just use *data/sample_input.txt* or *data/sample_input_old.txt* in this repository for convenience
+
+or you can create your own testing data (copy the format from abovementioned files)
+
+\<OUTPUT FILE\> is the output of input file
+
+type any filename you want
 
 ## start training
-###### the training config is set up in python/config.py
+### Step0: change configs
+###### the training config is located in *python/config.py*
 
-you can change some training hyper-parameters
+you can change some training hyper-parameters, or just keep the original one
 
-you need those libraries
+### Step1: download data & libraries
+we use [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)
+
+you need to download it and put it into data/ directory
+
+and you need to download those libraries:
 1. python2.7
 2. python3
 3. tensorflow 1.0.1
 4. tensorflow-gpu 1.0.1
 5. gensim 1.0.1
 6. numpy 1.12.*
-
-### Step1: download data
-we use [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)
-
-you need to download it and put it into data/ directory
 
 ### Step2: parse data
 ```bash
@@ -142,7 +154,7 @@ if you choose 1, chatbot will only considers user's utterance
 if you choose 2, chatbot will considers user's utterance and chatbot's last utterance
 
 ### Step5: train a RL model
-you can change the training_type parameter in python/config.py
+you can change the training_type parameter in *python/config.py*
 
 'normal' for seq2seq training, 'pg' for policy gradient
 
