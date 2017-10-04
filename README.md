@@ -1,5 +1,5 @@
 # Reinforcement Learning Chatbot
-*an open-domain chatbot*
+*a movie-style chatbot*
 
 This chatbot is trained by seq2seq model described in [Sequence to Sequence -- Video to Text](https://arxiv.org/abs/1505.00487)
 
@@ -10,7 +10,7 @@ you can find chatbot's results in *tmp/* directory
 
 neural networks' configs of those results are described in the filename
 
-* Example 1
+* Result 1
 >A: I forgot to get the Coca-Cola.
 
 >B: I got something stuck in the head.
@@ -25,7 +25,7 @@ neural networks' configs of those results are described in the filename
 
 >A: And is a strange story.
 
-* Example 2
+* Result 2
 >A: Can you do me a favor?
 
 >B: Anything.
@@ -38,7 +38,7 @@ neural networks' configs of those results are described in the filename
 
 >B: Don't get it at least it's about as much as I can.
 
-* Example3
+* Result 3
 >A: I didn't do it! I haven't got a gun!
 
 >B: You liar. You still want to get your money back.
