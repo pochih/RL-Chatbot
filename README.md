@@ -120,7 +120,7 @@ you need to download it and put it into data/ directory
 
 and you need to download some libraries with pip:
 ```bash
-pip -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Step2: parse data
