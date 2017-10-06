@@ -118,13 +118,10 @@ we use [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Corne
 
 you need to download it and put it into data/ directory
 
-and you need to download those libraries:
-1. python2.7
-2. python3
-3. tensorflow 1.0.1
-4. tensorflow-gpu 1.0.1
-5. gensim 1.0.1
-6. numpy 1.12.*
+and you need to download some libraries with pip:
+```bash
+pip -r requirements.txt
+```
 
 ### Step2: parse data
 ```bash
