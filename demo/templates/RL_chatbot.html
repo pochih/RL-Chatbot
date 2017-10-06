@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <!-- 
+      The codes are free, but we require linking to our web site.
+      Why to Link?
+      A true story: one girl didn't set a link and had no decent date for two years, and another guy set a link and got a top ranking in Google! 
+      Where to Put the Link?
+      home, about, credits... or in a good page that you want
+      THANK YOU MY FRIEND!
+    -->
+    <title>Reonforcement Learning Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/RLbot.min.css') }}">
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <a class="navbar-brand" href="#" id="product-title">RL Bot</a>
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#helper"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+          <li><a href="#about"><span class="glyphicon glyphicon-user"></span> About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="chatbox">
+        <div class="col-md-12 col-lg-12">
+            <div class="panel box">
+                <!--Widget body-->
+                <div id="demo-chat-body" class="collapse in">
+                    <div class="nano has-scrollbar" style="height:83vh">
+                        <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                            <ul class="list-unstyled media-block" id="msg-list">
+                            </ul>
+                        </div>
+                        <div class="nano-pane">
+                            <div class="nano-slider" style="height: 141px; transform: translate(0px, 0px);"></div>
+                        </div>
+                    </div>
+
+                    <!--Widget footer-->
+                    <div class="panel-footer box">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="row">
+                                    <div class="col-xs-10">
+                                        <input id="msginput" type="text" placeholder="請在這裡輸入" class="form-control chat-input">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button id="speechBtn" class="btn btn-block speechBtnOff" type="submit">啟用語音</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <button id="sendBtn" class="btn btn-primary btn-block" type="submit">Send</button>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <button id="resetBtn" class="btn btn-danger btn-block" type="submit">Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='helper' style="height:50px;"></div>
+    <div class="container">
+        <div class="col-md-12 col-lg-12">
+            <div class="panel box">
+                <!--Heading-->
+                <div class="panel-heading">
+                    <div class="panel-control">
+                        <button id="help-btn" type="button" class="btn btn-default" onclick="window.location.href='#'">
+                            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <h1 class="panel-title">Manual</h1>
+                </div>
+
+                <!--Widget body-->
+                <div id="help-body" class="collapse in">
+                    <div class="nano has-scrollbar" style="height:128vh">
+                        <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                            <!-- <h4>1. 與「海濤」成為好友。</h4> -->
+                            <h4>1. 跟「海濤」打招呼，例如：「妳好」、「Hi」、「Hello」、「海濤你好」。
+                                <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    <section style="margin-left:30px;">
+                                        <b> example: </b>
+    
+                                        <h5>>_ 使用者：「妳好」</h5>
+                                        <h5>>_ 海濤：「Hi, 你好😄 我是海濤，是智慧的機器人！…」</h5>
+                                    </section>
+                                </div>
+                            </h4>
+                            <h4>2. 輸入「重來」或「重來啦」重置對話。若成功重置對話，海濤會說「法師又carry了一場」代表對話的結束。
+                                <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    <section style="margin-left:30px;">
+                                        <b> example: </b>
+    
+                                        <h5>>_ 使用者：「重來」</h5>
+                                        <h5>>_ 海濤：「法師又carry了一場」</h5>
+                                    </section>
+                                </div>
+                            </h4>
+                            <h4>3. 提出想找的東西，例如：「我要找作品」、「我要找演員」、「我要找周星馳演的作品」、「我要找美國隊長的演員」、「我要找評分高於8分的作品」、「我要找美國隊長的評分」，海濤會分析你的需求。
+                                <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    <section style="margin-left:30px;">
+                                        <b> example: </b>
+    
+                                        <h5>>_ 使用者：「我想找周星馳的作品」</h5>
+                                        <h5>>_ 海濤：「請問他的影片內容是什麼？你知道嗎🤠」</h5>
+                                    </section>
+                                </div>
+                            </h4>
+                            <h4>4. 海濤會要求更多的資訊，對應到不同的slot type，回應時直接打內容即可，若不是很確定或不知道，請回應「我不知道」。
+                                <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    <section style="margin-left:30px;">
+                                        <b> example: 通常以「內容」來代表要求的 slot type 為 content</b>
+    
+                                        <h5>>_ 海濤：「請問他的影片內容是什麼？你知道嗎🤠」</h5>
+                                        <h5>>_ 使用者：「美國隊長」</h5>
+                                    </section>
+                                    <section style="margin-left:30px;">
+                                        <b> example: 通常以「地區」來代表要求的 slot type 為 location，例如：「日韓」、「歐美」</b>
+    
+                                        <h5>>_ 海濤：「請問他的影片地區是什麼？你知道嗎🤠」</h5>
+                                        <h5>>_ 使用者：「地區是中港臺」</h5>
+                                    </section>
+                                    <section style="margin-left:30px;">
+                                        <b> example: 通常以「狀態」來代表要求的 slot type 為 status，可能的詞有「完結」、「連載」兩種</b>
+    
+                                        <h5>>_ 海濤：「請問他的狀態是什麼？你知道嗎🤠」</h5>
+                                        <h5>>_ 使用者：「完結」</h5>
+                                    </section>
+                                    <section style="margin-left:30px;">
+                                        <b> example: 當 slot type 為一個數字，搜尋時是以高於Ｘ來當作 query</b>
+    
+                                        <h5>>_ 海濤：「請問他的評分是什麼？你知道嗎🤠」</h5>
+                                        <h5>>_ 使用者：「5.0」（也就是高於5.0分)</h5>
+                                    </section>
+                                    <section style="margin-left:30px;">
+                                        <b> example: 更新時間 (update_time) 為 yyyy-mm-dd 的格式，若不確定，請以最小值代替（注意：更新時間為資料庫更新時間，並非作品上映時間）</b>
+    
+                                        <h5>>_ 海濤：「請問他的評分是什麼？你知道嗎🤠」</h5>
+                                        <h5>>_ 使用者：2017-02-23 (當你年月日都知道)</h5>
+                                        <h5>>_ 使用者：2017-02-01 (當妳只知道月份和年份時)</h5>
+                                        <h5>>_ 使用者：2017-01-01 (當你只想輸入年份時)</h5>
+                                    </section>
+                                </div>
+                            </h4>
+                            <h4>5. 海濤會向使用者確認他得到的資訊，若為正確請輸入「對」、「沒錯」、「是」。
+                                <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    <section style="margin-left:30px;">
+                                        <b> example: </b>
+    
+                                        <h5>>_ 海濤：「你是否不知道你要找的內容，如果知道請直接告訴我資訊！」</h5>
+                                        <h5>>_ 使用者：「對」（例子1）</h5>
+                                        <h5>>_ 海濤：「請問您剛剛說的影片內容是犯罪嗎？😅若內容不正確，請輸入再次輸入正確的。」</h5>
+                                        <h5>>_ 使用者：「蝙蝠俠」（例子2）</h5>
+        
+                                    </section>
+                                </div>
+                            </h4> 
+
+                            <h4>6. 海濤回傳結果會是一個電影列表，裡面包含電影的所有資訊。使用者可以回應「我要給你x分」幫海濤打分數。
+                                <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    <section style="margin-left:30px;">
+                                        <b> example: </b>
+    
+                                        <h5>>_ 海濤：「以下是我搜尋到的結果」</h5>
+                                        <h5>>_ 海濤：「...電影列表...」</h5>
+                                        <h5>>_ 使用者：「我要給你5分」</h5>
+                                        <h5>>_ 海濤：「法師又carry了一場」（對話結束)</h5>
+                                    </section>
+                                </div>
+                            </h4> 
+                            <ul class="list-unstyled media-block">
+                            </ul>
+                        </div>
+                        <div class="nano-pane">
+                            <div class="nano-slider" style="height: 141px; transform: translate(0px, 0px);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id='about'>
+        <div class="col-md-12 col-lg-12">
+            <div class="panel box">
+                <!--Heading-->
+                <div class="panel-heading">
+                    <div class="panel-control">
+                        <button id="about-btn" type="button" class="btn btn-default" onclick="window.location.href='#'">
+                            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <h1 class="panel-title">About Us</h1>
+                </div>
+
+                <!--Widget body-->
+                <div id="about-body" class="collapse in">
+                    <div class="nano has-scrollbar" style="height:68vh">
+                        <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                        <h4>· b02705021 謝志邦
+                                        <h5>>_ bigelephant29</h5>
+                                        <img src="{{ url_for('static', filename = 'img/b02705021.jpg') }}" class="img-circle" alt="智邦" width="150" height="150">
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                        <h4>· b02902074 蔡昆翰
+                                        <h5>>_ kevinorjohn</h5>
+                                        <img src="{{ url_for('static', filename = 'img/b02902074.jpg') }}" class="img-circle" alt="昆翰" width="150" height="150">
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                        <h4>· r05922018 黃柏智
+                                        <h5>>_ brianhuang1019</h5>
+                                        <img src="{{ url_for('static', filename = 'img/r05922018.png') }}" class="img-circle" alt="柏智" width="150" height="150">
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                        <h4>· r05922021 陳翰浩
+                                        <h5>>_ m516825</h5>
+                                        <img src="{{ url_for('static', filename = 'img/r05922021.jpg') }}" class="img-circle" alt="翰浩" width="150" height="150">
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                        <h4>· r05922027 江東峻
+                                        <h5>>_ gdoggg2032</h5>
+                                        <img src="{{ url_for('static', filename = 'img/r05922027.jpg') }}" class="img-circle" alt="G狗" width="150" height="150">
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nano-pane">
+                            <div class="nano-slider" style="height: 141px; transform: translate(0px, 0px);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        var UID = {{ uid }};
+        var name_list = ['重度戲劇成癮者', '網路紅人', '帥葛葛', '不看電視會死', '億載金城武', '蘆洲湯姆克魯斯', '迷途的電影愛好者', '毒舌影評', '金鐘獎評審', '奧斯卡影帝', '港都敏俊'];
+        var agent_name_list = ['海濤', '台灣阿濤世界偉人財神總統影片達人', '海濤法師', '濤爺']
+
+        var idx = parseInt(UID) % name_list.length;
+        var USERNAME = name_list[idx];
+
+        idx = parseInt(UID) % agent_name_list.length;
+        var AGENTNAME = agent_name_list[idx];
+        console.log('uid =', UID, 'username=', USERNAME, 'agentname=', AGENTNAME);
+
+        var speechFlag = 0;
+        var supportSpeech = 0;
+        var recognition = "";
+        initSpeech()
+
+        // speech API
+        function initSpeech() {
+            if (!('webkitSpeechRecognition' in window)) {
+                console.log('This browser doesn\'t  support Google Speech API');
+            } 
+            else {
+                console.log('This browser support Google Speech API');
+                supportSpeech = 1;
+                
+                recognition = new webkitSpeechRecognition()
+                recognition.continuous = true;
+                recognition.interimResults = true;
+                recognition.lang = "cmn-Hant-TW";
+                    
+                recognition.onstart=function(){
+                    $('#speechBtn').html('停用語音');
+                    $('#speechBtn').removeClass("speechBtnOff").addClass("speechBtnOn");
+                    document.getElementById("msginput").focus();
+                    console.log('開始辨識...');
+                };
+                recognition.onend=function(){
+                    $('#speechBtn').html('啟用語音');
+                    $('#speechBtn').removeClass("speechBtnOn").addClass("speechBtnOff");
+                    document.getElementById("msginput").focus();
+                    console.log('停止辨識!');
+                };
+                    
+                recognition.onresult=function(event){
+                    var i = event.resultIndex;
+                    if (event.results[i].isFinal) {
+                        var j = event.results[i].length-1;
+                        console.log(event.results[i][j].transcript)
+                        $('#msginput').val(event.results[i][j].transcript);
+                    }
+                };
+            }
+        }
+        function switchSpeech() {
+            if (speechFlag == 0) {
+                if (supportSpeech == 0) {
+                    addLeft('抱歉<br />您用的瀏覽器不支援語音輸入QQ<br />目前只支援 Chrome🤠<br />啾咪❤', 'demo-chat-body', AGENTNAME);
+                }
+                else {
+                    recognition.start();
+                    speechFlag = 1;
+                }
+            }
+            else {
+                recognition.stop();
+                speechFlag = 0;
+            }
+        }
+
+        // send init msg
+        initMessage()
+
+        // support msg submit via pressing Enter
+        document.getElementById('msginput').addEventListener('keypress', function(event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // focus on input
+        document.getElementById("msginput").focus();
+
+        // get time
+        function getTimeStr() {
+            var currentdate = new Date();
+            curtime = currentdate.getHours() + ":";
+            if (parseInt(currentdate.getMinutes()) < 10) {
+                curtime += ('0' + currentdate.getMinutes());
+            }
+            else {
+                curtime += currentdate.getMinutes();
+            }
+            return curtime
+        }
+
+        // init msg
+        function initMessage() {
+            // init msg
+            addLeft('My name is 海濤<br />關於影片的事我沒有不知道的<br />如果有，那一定是，假的。<br />想好好地利用我的智慧嗎？<br />建議你先去 <b><a href="#helper" style="color:#f90265;">這裡</a></b> 看看使用說明<br />啾咪❤', 'demo-chat-body', AGENTNAME);
+        }
+
+        // add to chatbox
+        function addLeft(text, blockid, u_name) {
+            var timeStr = getTimeStr()
+            $(`#${blockid}`).find('ul.list-unstyled').append(`<li class="mar-btm" ><div class="media-left" ><a href="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2016/07/12/99/2365203.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800" target="_blank"><img src="{{ url_for('static', filename = 'img/haitao.png') }}" class="img-circle" alt="haitao" width="76" height="76"></a></div><div class="media-body pad-hor"><div class="speech" ><a href="https://zh.wikipedia.org/wiki/%E9%87%8B%E6%B5%B7%E6%BF%A4" target="_blank" class="media-heading">${u_name}</a><p>${text}</p><p class="speech-time"><span class="glyphicon glyphicon-time"></span>${timeStr}</p></div></div></li>`)
+
+            $(`#${blockid}`).find('div.nano-content').animate({ scrollTop: $(`#${blockid}`).find('div.nano-content').prop("scrollHeight") }, 500);
+        }
+        function addRight(text, blockid, u_name) {
+            var timeStr = getTimeStr()
+            $(`#${blockid}`).find('ul.list-unstyled').append(`<li class="mar-btm" ><div class="media-right"><img src="{{ url_for('static', filename = 'img/tv.jpg') }}" class="img-circle" alt="user" width="76" height="76"></div><div class="media-body pad-hor speech-right" ><div class="speech" ><p class="media-heading">${u_name}</p><p>${text}</p><p class="speech-time"><span class="glyphicon glyphicon-time"></span>${timeStr}</p></div></div></li>`)
+
+            $(`#${blockid}`).find('div.nano-content').animate({ scrollTop: $(`#${blockid}`).find('div.nano-content').prop("scrollHeight") }, 500);
+        }
+        function addBusy(text, blockid, u_name) {
+            var timeStr = getTimeStr()
+            $(`#${blockid}`).find('ul.list-unstyled').append(`<li class="mar-btm" ><div class="media-left" ><a href="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2016/07/12/99/2365203.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800" target="_blank"><img src="{{ url_for('static', filename = 'img/haitao.png') }}" class="img-circle" alt="haitao" width="76" height="76"></a></div><div class="media-body pad-hor"><div class="speech" ><a href="https://zh.wikipedia.org/wiki/%E9%87%8B%E6%B5%B7%E6%BF%A4" target="_blank" class="media-heading">${u_name}</a><p><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p><p class="speech-time"><span class="glyphicon glyphicon-time"></span>${timeStr}</p></div></div></li>`)
+        }
+        function deleteLast(blockid) {
+            var q = $(`#${blockid}`).find('ul.list-unstyled').last().val();
+            console.log('q', q);
+        }
+
+        // GET & POST msg
+        function sendMessage() {
+            var msg = $('#demo-chat-body').find('input.chat-input').val();
+            $('#demo-chat-body').find('input.chat-input').val("");
+            if (msg) {
+                addRight(msg, 'demo-chat-body', USERNAME);
+                addBusy('海濤思考中...', 'demo-chat-body', AGENTNAME);
+
+                // make json
+                var userMsg = {
+                    uid: UID,
+                    msg: msg
+                };
+                console.log(userMsg)
+
+                url = '/messages/' + UID
+                fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify(userMsg)
+                })
+                .then(function (data) {
+                    console.log('Request success: ', data);
+                    getMessage()
+                    document.getElementById("msginput").focus();
+                })
+                .catch(function (error) {  
+                    console.log('Request failure: ', error);  
+                });
+            }
+        }
+        function getMessage() {
+            url = '/messages/' + UID
+            fetch(url, {
+                method: 'GET',
+            })
+            .then(function (res) {
+                console.log('res', res)
+                res.text().then(function (text) {
+                    $("#msg-list").children("li:last").remove();
+                    // $("#msg-list").last().remove();
+                    // deleteLast('demo-chat-body')
+                    addLeft(text, 'demo-chat-body', AGENTNAME);
+                })
+            })
+        }
+
+        function deleteMessage() {
+            url = '/reset-msg/' + UID
+            fetch(url, {
+                method: 'GET',
+            })
+            .then(function (data) {
+                console.log('Request success: ', data);
+                $('#demo-chat-body').find('ul.list-unstyled').empty()
+                initMessage()
+                document.getElementById("msginput").focus();
+            })
+            .catch(function (error) {  
+                console.log('Request failure: ', error);  
+            });
+        }
+
+        // add method to items
+        $('#demo-chat-body').find('#speechBtn').click(switchSpeech);
+        $('#demo-chat-body').find('#sendBtn').click(sendMessage);
+        $('#demo-chat-body').find('#resetBtn').click(deleteMessage);
+
+    </script>
+</body>
+
+</html>
