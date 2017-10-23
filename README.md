@@ -67,7 +67,7 @@ generate a response from a given request
 
 \<INPUT FILE\> is the testing data
 
-you can just use *data/sample_input.txt* or *data/sample_input_old.txt* in this repository for convenience
+you can just use *tmp/sample_input.txt* or *tmp/sample_input_old.txt* in this repository for convenience
 
 or you can create your own testing data (copy the format from abovementioned files)
 
@@ -99,7 +99,7 @@ if you choose 2, chatbot will considers user's utterance and chatbot's last utte
 
 \<INPUT FILE\> is the testing data
 
-you can just use *data/sample_input.txt* or *data/sample_input_old.txt* in this repository for convenience
+you can just use *tmp/sample_input.txt* or *tmp/sample_input_old.txt* in this repository for convenience
 
 or you can create your own testing data (copy the format from abovementioned files)
 
