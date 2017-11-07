@@ -93,9 +93,9 @@ to generate RL dialog, type model/RL/model-56-3000
 
 the number represents # of former sentence(s) that chatbot considers
 
-if you choose 1, chatbot only considers user's utterance
+__if you choose 1, chatbot only considers user's utterance__
 
-if you choose 2, chatbot will considers user's utterance and chatbot's last utterance
+__if you choose 2, chatbot will considers user's utterance and chatbot's last utterance__
 
 \<INPUT FILE\> is the testing data
 
