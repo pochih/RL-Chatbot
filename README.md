@@ -56,10 +56,10 @@ neural networks' configs of those results are described in the filename
 ## generate response by pre-trained model
 generate a response from a given request
 ```bash
-./download.sh
+./script/download.sh
 ```
 ```bash
-./run.sh <TYPE> <INPUT FILE> <OUTPUT FILE>
+./script/run.sh <TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
 \<TYPE\> can be one of below:
 1. S2S
@@ -67,7 +67,7 @@ generate a response from a given request
 
 \<INPUT FILE\> is the testing data
 
-you can just use *tmp/sample_input.txt* or *tmp/sample_input_old.txt* in this repository for convenience
+you can just use *tmp/sample_input.txt* or *tmp/sample_input_new.txt* in this repository for convenience
 
 or you can create your own testing data (copy the format from abovementioned files)
 
@@ -78,10 +78,10 @@ type any filename you want
 ## simulate a dialog by pre-trained model
 generate a dialog, which starts from a given request
 ```bash
-./download.sh
+./script/download.sh
 ```
 ```bash
-./simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
+./script/simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
 for \<PATH TO MODEL\>
 
@@ -99,7 +99,7 @@ if you choose 2, chatbot will considers user's utterance and chatbot's last utte
 
 \<INPUT FILE\> is the testing data
 
-you can just use *tmp/sample_input.txt* or *tmp/sample_input_old.txt* in this repository for convenience
+you can just use *tmp/sample_input.txt* or *tmp/sample_input_new.txt* in this repository for convenience
 
 or you can create your own testing data (copy the format from abovementioned files)
 
@@ -125,22 +125,22 @@ pip install -r requirements.txt
 
 ### Step2: parse data
 ```bash
-./parse.sh
+./script/parse.sh
 ```
 
 ### Step3: train a Seq2Seq model
 ```bash
-./train.sh
+./script/train.sh
 ```
 
 ### Step4-1: test a Seq2Seq model
 ```bash
-./test.sh <PATH TO MODEL> <INPUT FILE> <OUTPUT FILE>
+./script/test.sh <PATH TO MODEL> <INPUT FILE> <OUTPUT FILE>
 ```
 
 ### Step4-2: simulate a dialog
 ```bash
-./simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
+./script/simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
 \<SIMULATE TYPE\> can be 1 or 2
 
@@ -160,7 +160,7 @@ you need to first train with 'normal' for some epochs till stable (at least 30 e
 then change the method to 'pg' to optimize the reward function
 
 ```bash
-./train_RL.sh
+./script/train_RL.sh
 ```
 
 *When training with policy gradient*
@@ -171,7 +171,7 @@ then change the method to 'pg' to optimize the reward function
 
 *or you can download pre-trained reversed model by*
 ```bash
-./download_reversed.sh
+./script/download_reversed.sh
 ```
 *the reversed model is also trained by cornell movie-dialogs dataset, but with source and target reversed.*
 
@@ -179,12 +179,12 @@ then change the method to 'pg' to optimize the reward function
 
 ### Step6-1: test a RL model
 ```bash
-./test_RL.sh <PATH TO MODEL> <INPUT FILE> <OUTPUT FILE>
+./script/test_RL.sh <PATH TO MODEL> <INPUT FILE> <OUTPUT FILE>
 ```
 
 ### Step6-2: simulate a dialog
 ```bash
-./simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
+./script/simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
 \<SIMULATE TYPE\> can be 1 or 2
 
