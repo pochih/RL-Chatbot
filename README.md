@@ -1,5 +1,9 @@
+![MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 # Reinforcement Learning Chatbot
 *a movie-style chatbot*
+
+<img align='center' style="border-color:gray;border-width:2px;border-style:dashed"   src='https://github.com/brianhuang1019/Reinforcement-Learning_Chatbot/blob/master/RL-chatbot.png' padding='5px' height="250px"></img>
+<a href='https://phrasee.co/wp-content/uploads/2016/08/reinforcement-learning.gif'>Image src</a>
 
 This chatbot is trained by seq2seq model described in [Sequence to Sequence -- Video to Text](https://arxiv.org/abs/1505.00487)
 
