@@ -1,12 +1,12 @@
 ![MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 
 ## Intro
-This chatbot is trained by seq2seq model described in [Sequence to Sequence -- Video to Text](https://arxiv.org/abs/1505.00487).
+This chatbot is trained by seq2seq model described in <a href="https://arxiv.org/abs/1505.00487" target="_blank">Sequence to Sequence -- Video to Text</a>.
 
-Then use the reward function described in [Deep Reinforcement Learning for Dialogue Generation](https://arxiv.org/abs/1606.01541) to increase the performance.
+Then use the reward function described in <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a> to increase the performance.
 
 <img align='center' style="border-color:gray;border-width:2px;border-style:dashed"   src='https://github.com/brianhuang1019/Reinforcement-Learning_Chatbot/blob/master/RL-chatbot.png' padding='5px' height="200px"></img>
-<h6><a href='https://phrasee.co/wp-content/uploads/2016/08/reinforcement-learning.gif'>Image src</a></h6>
+<h6><a href='https://phrasee.co/wp-content/uploads/2016/08/reinforcement-learning.gif' target="_blank">Image src</a></h6>
 
 
 
@@ -57,7 +57,7 @@ Let me show you some results below:
 
 >A: And is a strange story.
 
-you can find more results from chatbot in *tmp/* directory
+you can find more results from chatbot in <a href='tmp' target="_blank">here</a>
 
 neural networks' configs of those results are described in the filename
 
@@ -73,7 +73,9 @@ Just follow the instructions below:
 ```bash
 ./script/download.sh
 ```
-###### (Mention that I use -nc parameter in script/download.sh, it will omit downloading if the file exists. So make sure there's no break during the download)
+###### (Mention that I use -nc parameter in script/download.sh, it will omit downloading if the file exists
+
+###### So make sure there's no break during the download)
 ```bash
 ./script/simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
@@ -96,7 +98,7 @@ __if you choose 2, chatbot will considers user's utterance and chatbot itself's 
 
 - \<INPUT FILE\>
 
-Take a look at [example file](tmp/sample_input_new.txt) 
+Take a look at <a href='tmp/sample_input_new.txt' target="_blank">example file</a> 
 
 This is the input format of the chatbot, each line is the begin sentence of a dialog.
 
@@ -128,7 +130,7 @@ can be one of below:
 
 - \<INPUT FILE\> 
 
-Take a look at [example file](tmp/sample_input_new.txt) 
+Take a look at <a href='tmp/sample_input_new.txt' target="_blank">example file</a>
 
 This is the input format of the chatbot, each line is the begin sentence of a dialog.
 
@@ -148,12 +150,12 @@ If you want to train the chatbot from scratch
 You can follow those instructions below:
 
 #### Step0: training configs
-Take a look at [python/config.py](python/config.py), all configs for training is described here.
+Take a look at <a href='python/config.py' target="_blank">config.py</a>, all configs for training is described here.
 
 You can change some training hyper-parameters, or just keep the original ones.
 
 #### Step1: download data & libraries
-I use [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)
+I use <a href='https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html' target="_blank">Cornell Movie-Dialogs Corpus</a>
 
 You need to download it, unzip it, and move all .txt files into data/ directory
 
@@ -195,7 +197,7 @@ if you choose 1, chatbot will only considers user's utterance
 if you choose 2, chatbot will considers user's utterance and chatbot's last utterance
 
 #### Step5: train a RL model
-you need to change the *training_type* parameter in [python/config.py](python/config.py)
+you need to change the *training_type* parameter in <a href='python/config.py' target="_blank">config.py</a>
 
 'normal' for seq2seq training, 'pg' for policy gradient
 
