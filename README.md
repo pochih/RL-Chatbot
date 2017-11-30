@@ -5,9 +5,6 @@ This chatbot is trained by seq2seq model described in <a href="https://arxiv.org
 
 Then use the reward function described in <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a> to increase the performance.
 
-<img align='center' style="border-color:gray;border-width:2px;border-style:dashed"   src='https://github.com/brianhuang1019/Reinforcement-Learning_Chatbot/blob/master/RL-chatbot.png' padding='5px' height="200px"></img>
-<h6><a href='https://phrasee.co/wp-content/uploads/2016/08/reinforcement-learning.gif' target="_blank">Image src</a></h6>
-
 
 
 ## chatbot's results
@@ -82,9 +79,9 @@ Just follow the instructions below:
 
 - \<PATH TO MODEL\>
 
-to generate seq2seq dialog, type "model/Seq2Seq/model-77"
+to generate seq2seq dialog, type "__model/Seq2Seq/model-77__"
 
-to generate RL dialog, type "model/RL/model-56-3000"
+to generate RL dialog, type "__model/RL/model-56-3000__"
 
 - \<SIMULATE TYPE\> 
 
@@ -92,9 +89,9 @@ can be 1 or 2
 
 the number represents # of former sentence(s) that chatbot considers
 
-__if you choose 1, chatbot only considers user's utterance__
+__if you choose 1, chatbot only considers last sentence__
 
-__if you choose 2, chatbot will considers user's utterance and chatbot itself's last utterance__
+__if you choose 2, chatbot will consider last two sentences (one from user, and one from chatbot itself)__
 
 - \<INPUT FILE\>
 
@@ -124,9 +121,10 @@ Follow the instructions below:
 ```
 
 - \<TYPE\> 
-can be one of below:
-1. S2S
-2. RL
+
+to generate seq2seq response, type "__S2S__"
+
+to generate reinforcement learning response, type "__RL__"
 
 - \<INPUT FILE\> 
 
@@ -157,7 +155,7 @@ You can change some training hyper-parameters, or just keep the original ones.
 #### Step1: download data & libraries
 I use <a href='https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html' target="_blank">Cornell Movie-Dialogs Corpus</a>
 
-You need to download it, unzip it, and move all .txt files into data/ directory
+You need to download it, unzip it, and __move all .txt files into data/ directory__
 
 Then download some libraries with pip:
 ```bash
@@ -176,13 +174,13 @@ pip install -r requirements.txt
 ```
 
 #### Step4-1: test a Seq2Seq model
-Let show some result of seq2seq model :)
+Let's show some results of seq2seq model :)
 ```bash
 ./script/test.sh <PATH TO MODEL> <INPUT FILE> <OUTPUT FILE>
 ```
 
 #### Step4-2: simulate a dialog
-And show some dialog result of seq2seq model
+And show some dialog results from seq2seq model!
 ```bash
 ./script/simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
@@ -213,25 +211,25 @@ then change the method to 'pg' to optimize the reward function
 
 *you may need a reversed model*
 
-*you can train it by your-self*
+*the reversed model is also trained by cornell movie-dialogs dataset, but with source and target reversed.*
 
-*or you can download pre-trained reversed model by*
+*you can download pre-trained reversed model by*
 ```bash
 ./script/download_reversed.sh
 ```
 
-*the reversed model is also trained by cornell movie-dialogs dataset, but with source and target reversed.*
+*or you can train it by your-self*
 
 *you don't need to change any setting about reversed model if you use pre-trained reversed model*
 
 #### Step6-1: test a RL model
-Let show some result of RL model, and find the different from seq2seq model :)
+Let's show some results of RL model, and find the different from seq2seq model :)
 ```bash
 ./script/test_RL.sh <PATH TO MODEL> <INPUT FILE> <OUTPUT FILE>
 ```
 
 #### Step6-2: simulate a dialog
-And show some dialog result of RL model
+And show some dialog results from RL model!
 ```bash
 ./script/simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
 ```
@@ -241,6 +239,6 @@ can be 1 or 2
 
 the number represents # of former sentence(s) that chatbot considers
 
-if you choose 1, chatbot will only considers user's utterance
+__if you choose 1, chatbot only considers last sentence__
 
-if you choose 2, chatbot will considers user's utterance and chatbot's last utterance
+__if you choose 2, chatbot will consider last two sentences (one from user, and one from chatbot itself)__
