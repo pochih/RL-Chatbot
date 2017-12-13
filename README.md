@@ -1,15 +1,25 @@
 ![MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 
 ## Intro
-This chatbot is trained by seq2seq model described in <a href="https://arxiv.org/abs/1505.00487" target="_blank">Sequence to Sequence -- Video to Text</a>.
+This is a chatbot trained by __seq2seq__ and __reinforcement learning__.
 
-Then use the reward function described in <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a> to increase the performance.
+* __seq2seq__
+
+It's an encoder-decoder architecture, similar to the one described in paper <a href="https://arxiv.org/abs/1505.00487" target="_blank">Sequence to Sequence -- Video to Text</a>.
+
+* __RL__
+
+After training chatbot with enough epochs, I use one kind of RL techniques called policy gradient, to train chatbot.
+
+By doing this, the chatbot can generate more interesting response, correspond to the reward function.
+
+My reward function is similar to the one described in paper <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a>.
 
 
 
 ## chatbot's results
 
-Let me show you some results below:
+Let me show you some chatbot's results:
 
 * __Result 1__ (A & B are both a trained chatbot)
 >A: Can you do me a favor?
