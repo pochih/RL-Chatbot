@@ -1,5 +1,8 @@
 ![MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 
+Below is intro in English version.
+中文版 Intro 正在編寫中.
+
 ## Intro
 This is a chatbot trained by __seq2seq__ and __reinforcement learning__.
 
