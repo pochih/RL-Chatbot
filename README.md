@@ -1,6 +1,5 @@
 ![MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 
-[[visit here for Chinese intro!](./README-chinese.md)]
 
 ## Intro
 This is a chatbot trained by __seq2seq__ and __reinforcement learning__.
