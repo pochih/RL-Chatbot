@@ -253,3 +253,7 @@ the number represents # of former sentence(s) that chatbot considers
 __if you choose 1, chatbot only considers last sentence__
 
 __if you choose 2, chatbot will consider last two sentences (one from user, and one from chatbot itself)__
+
+
+## Author
+Po-Chih Huang / [@brianhuang1019](http://brianhuang1019.github.io/)
