@@ -1,4 +1,4 @@
-![MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 
 ## Intro
@@ -6,7 +6,11 @@ This is a chatbot trained by __seq2seq__ and __reinforcement learning__.
 
 * __seq2seq__
 
-It's an encoder-decoder architecture, similar to the one described in paper <a href="https://arxiv.org/abs/1505.00487" target="_blank">Sequence to Sequence -- Video to Text</a>.
+Seq2seq is a classical model that its input and output are both sequence.
+
+The vanilla seq2seq is described in NIPS 2014 paper Sequence to [Sequence Learning with Neural Networks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
+
+My seq2seq model is constructed with 2 LSTMs, similar to the one described in ICCV 2015 paper <a href="https://arxiv.org/abs/1505.00487" target="_blank">Sequence to Sequence -- Video to Text</a>.
 
 * __RL__
 
@@ -14,7 +18,7 @@ After training chatbot with enough epochs, I use one kind of RL techniques calle
 
 By doing this, the chatbot can generate more interesting response, correspond to the reward function.
 
-My reward function is similar to the one described in paper <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a>.
+My reward function is similar to the one described in EMNLP 2016 paper <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a>.
 
 
 
