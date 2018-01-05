@@ -8,7 +8,7 @@ This is a chatbot trained by __seq2seq__ and __reinforcement learning__.
 
 Seq2seq is a classical model that its input and output are both sequence.
 
-The vanilla seq2seq is described in NIPS 2014 paper Sequence to [Sequence Learning with Neural Networks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
+The vanilla seq2seq is described in NIPS 2014 paper Sequence to [Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
 
 My seq2seq model is constructed with 2 LSTMs, similar to the one described in ICCV 2015 paper <a href="https://arxiv.org/abs/1505.00487" target="_blank">Sequence to Sequence -- Video to Text</a>.
 
