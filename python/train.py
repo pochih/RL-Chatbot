@@ -100,7 +100,6 @@ def train():
 
     saver = tf.train.Saver(max_to_keep=100)
 
-    # gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
     sess = tf.InteractiveSession()
     
     if checkpoint:
@@ -130,7 +129,6 @@ def train():
                         batch_X[i].append(np.zeros(dim_wordvec))
 
             current_feats = np.array(batch_X)
-            # print('current_feats.shape', current_feats.shape)
 
             current_captions = batch_Y
             current_captions = map(lambda x: '<bos> ' + x, current_captions)
