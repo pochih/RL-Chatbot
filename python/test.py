@@ -95,12 +95,8 @@ def test(model_path=default_model_path):
             for i in range(len(generated_word_index)):
                 if generated_word_index[i] == 3:
                     sort_prob_logit = sorted(prob_logit[i][0])
-                    # print('max val', sort_prob_logit[-1])
-                    # print('second max val', sort_prob_logit[-2])
                     maxindex = np.where(prob_logit[i][0] == sort_prob_logit[-1])[0][0]
                     secmaxindex = np.where(prob_logit[i][0] == sort_prob_logit[-2])[0][0]
-                    # print('max ind', maxindex, ixtoword[maxindex])
-                    # print('second max ind', secmaxindex, ixtoword[secmaxindex])
                     generated_word_index[i] = secmaxindex
 
             generated_words = []
