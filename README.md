@@ -83,6 +83,9 @@ You can generate those amazing dialogs by your own!
 Just follow the instructions below:
 
 ```bash
+pip install -r requirements.txt
+```
+```bash
 ./script/download.sh
 ```
 ###### (Mention that I use -nc parameter in script/download.sh, it will omit downloading if the file exists
@@ -128,6 +131,9 @@ If you want chatbot to generate only a single response
 Follow the instructions below:
 
 ```bash
+pip install -r requirements.txt
+```
+```bash
 ./script/download.sh
 ```
 ###### (Mention that I use -nc parameter in script/download.sh, it will omit downloading if the file exists. So make sure there's no break during the download)
@@ -170,7 +176,7 @@ You can change some training hyper-parameters, or just keep the original ones.
 #### Step1: download data & libraries
 I use <a href='https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html' target="_blank">Cornell Movie-Dialogs Corpus</a>
 
-You need to download it, unzip it, and __move all .txt files into data/ directory__
+You need to download it, unzip it, and __move all *.txt files into data/ directory__
 
 Then download some libraries with pip:
 ```bash
