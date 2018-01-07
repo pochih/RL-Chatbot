@@ -44,8 +44,6 @@ class PolicyGradient_chatbot():
         state2 = tf.zeros([self.batch_size, self.lstm2.state_size])
         padding = tf.zeros([self.batch_size, self.dim_hidden])
 
-        # probs = []
-        # states = []
         entropies = []
         loss = 0.
         pg_loss = 0.  # policy gradient loss
@@ -81,34 +79,17 @@ class PolicyGradient_chatbot():
             onehot_labels = tf.sparse_to_dense(concated, tf.stack([self.batch_size, self.n_words]), 1.0, 0.0)
 
             logit_words = tf.nn.xw_plus_b(output2, self.embed_word_W, self.embed_word_b)
-            # probs.append(logit_words)
 
             cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=logit_words, labels=onehot_labels)
             cross_entropy = cross_entropy * caption_mask[:, i]
             entropies.append(cross_entropy)
             pg_cross_entropy = cross_entropy * reward[:, i]
 
-            # current_loss = tf.reduce_sum(cross_entropy) / self.batch_size
-            # loss = loss + current_loss
-
             pg_current_loss = tf.reduce_sum(pg_cross_entropy) / self.batch_size
             pg_loss = pg_loss + pg_current_loss
 
         with tf.variable_scope(tf.get_variable_scope(), reuse=False):
-            # train_op = tf.train.RMSPropOptimizer(self.lr).minimize(loss)
-            # train_op = tf.train.GradientDescentOptimizer(self.lr).minimize(loss)
             train_op = tf.train.AdamOptimizer(self.lr).minimize(pg_loss)
-            # pg_train_op = tf.train.AdamOptimizer(self.lr).minimize(pg_loss)
-
-        # train_ops = {
-        #     'normal': train_op, # normal training
-        #     'pg': pg_train_op   # policy gradient training
-        # }
-
-        # losses = {
-        #     'normal': loss, # normal loss
-        #     'pg': pg_loss   # policy gradient loss
-        # }
 
         input_tensors = {
             'word_vectors': word_vectors,
@@ -119,8 +100,6 @@ class PolicyGradient_chatbot():
 
         feats = {
             'entropies': entropies
-            # 'probs': probs,
-            # 'states': states
         }
 
         return train_op, pg_loss, input_tensors, feats
@@ -170,16 +149,9 @@ class PolicyGradient_chatbot():
                 output2, state2 = self.lstm2(tf.concat([current_embed, output1], 1), state2)
 
             logit_words = tf.nn.xw_plus_b(output2, self.embed_word_W, self.embed_word_b)
-            # print('logit_words.shape', logit_words.get_shape())
             max_prob_index = tf.argmax(logit_words, 1)
-            # print('max_prob_index.shape', max_prob_index.get_shape())
-            # max_prob_index = tmp[0]
-            # max_prob_index = tf.reshape(max_prob_index, [self.batch_size, -1])
-            # print('max_prob_index.shape', max_prob_index.get_shape())
             generated_words.append(max_prob_index)
-            # print('len(generated_words)', len(generated_words))
             probs.append(logit_words)
-            # print('len(probs)', len(probs))
 
             with tf.device("/cpu:0"):
                 current_embed = tf.nn.embedding_lookup(self.Wemb, max_prob_index)
