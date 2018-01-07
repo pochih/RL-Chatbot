@@ -113,7 +113,7 @@ __if you choose 2, chatbot will consider last two sentences (one from user, and 
 
 - \<INPUT FILE\>
 
-Take a look at <a href='tmp/sample_input_new.txt' target="_blank">example file</a> 
+Take a look at <a href='tmp/sample_input_new.txt' target="_blank">tmp/sample_input_new.txt</a> 
 
 This is the input format of the chatbot, each line is the begin sentence of a dialog.
 
@@ -149,7 +149,7 @@ to generate reinforcement learning response, type "__RL__"
 
 - \<INPUT FILE\> 
 
-Take a look at <a href='tmp/sample_input_new.txt' target="_blank">example file</a>
+Take a look at <a href='tmp/sample_input_new.txt' target="_blank">tmp/sample_input_new.txt</a>
 
 This is the input format of the chatbot, each line is the begin sentence of a dialog.
 
@@ -169,7 +169,7 @@ If you want to train the chatbot from scratch
 You can follow those instructions below:
 
 #### Step0: training configs
-Take a look at <a href='python/config.py' target="_blank">config.py</a>, all configs for training is described here.
+Take a look at <a href='python/config.py' target="_blank">python/config.py</a>, all configs for training is described here.
 
 You can change some training hyper-parameters, or just keep the original ones.
 
@@ -216,7 +216,7 @@ if you choose 1, chatbot will only considers user's utterance
 if you choose 2, chatbot will considers user's utterance and chatbot's last utterance
 
 #### Step5: train a RL model
-you need to change the *training_type* parameter in <a href='python/config.py' target="_blank">config.py</a>
+you need to change the *training_type* parameter in <a href='python/config.py' target="_blank">python/config.py</a>
 
 'normal' for seq2seq training, 'pg' for policy gradient
 
