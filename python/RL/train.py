@@ -9,7 +9,6 @@ import copy
 
 sys.path.append("python")
 from model import Seq2Seq_chatbot
-# from inference import Inference
 from data_reader import Data_Reader
 import data_parser
 import config
@@ -176,17 +175,12 @@ def index2sentence(generated_word_index, prob_logit, ixtoword):
     for i in range(len(generated_word_index)):
         if generated_word_index[i] == 3 or generated_word_index[i] <= 1:
             sort_prob_logit = sorted(prob_logit[i])
-            # print('max val', sort_prob_logit[-1])
-            # print('second max val', sort_prob_logit[-2])
-            # maxindex = np.where(prob_logit[i] == sort_prob_logit[-1])[0][0]
             curindex = np.where(prob_logit[i] == sort_prob_logit[-2])[0][0]
             count = 1
             while curindex <= 3:
                 curindex = np.where(prob_logit[i] == sort_prob_logit[(-2)-count])[0][0]
                 count += 1
 
-            # print('max ind', maxindex, ixtoword[maxindex])
-            # print('second max ind', curindex, ixtoword[curindex])
             generated_word_index[i] = curindex
 
     generated_words = []
@@ -263,9 +257,7 @@ def count_rewards(dull_loss, forward_entropy, backward_entropy, forward_target, 
             if backward_len > 0:
                 total_loss[i, :] += (np.sum(backward_entropy[i]) / backward_len)
 
-        # total_loss = total_loss - np.mean(total_loss)
         total_loss = sigmoid(total_loss) * 1.1
-        # print('total_loss[:, 0]', total_loss[:, 0])
 
         return total_loss
 
@@ -331,8 +323,6 @@ def train():
         saver2.restore(sess2, os.path.join(reversed_model_path, reversed_model_name))
         print("Reversed model {} restored.".format(reversed_model_name))
 
-    # gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.5)
-    # sess = tf.InteractiveSession()
 
     dr = Data_Reader(cur_train_index=config.cur_train_index, load_list=config.load_list)
 
