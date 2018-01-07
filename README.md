@@ -265,5 +265,12 @@ __if you choose 1, chatbot only considers last sentence__
 __if you choose 2, chatbot will consider last two sentences (one from user, and one from chatbot itself)__
 
 
+## Environment
+- OS: CentOS Linux release 7.3.1611 (Core)
+- CPU: Intel(R) Xeon(R) CPU E3-1230 v3 @ 3.30GHz
+- GPU: GeForce GTX 1070 8GB
+- Memory: 16GB DDR3
+- Python3 (for data_parser.py) & Python2.7 (for others)
+
 ## Author
 Po-Chih Huang / [@brianhuang1019](http://brianhuang1019.github.io/)
