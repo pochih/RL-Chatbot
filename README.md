@@ -69,7 +69,7 @@ Let me show you some chatbot's results:
 
 >A: And is a strange story.
 
-you can find more results from chatbot in <a href='tmp' target="_blank">here</a>
+you can find more results from chatbot in <a href='tmp' target="_blank">this directory</a>
 
 neural networks' configs of those results are described in the filename
 
