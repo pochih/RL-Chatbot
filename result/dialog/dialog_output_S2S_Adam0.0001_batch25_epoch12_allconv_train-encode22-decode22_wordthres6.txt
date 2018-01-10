@@ -1,0 +1,1144 @@
+dialog 0
+A: How are you?
+B: Fine. I'm fine.
+A: You don't have to worry about that.
+B: I know what I'm doing. I'm not sure. I want to go home.
+A: You have the best.
+B: Yeah. I have to go to the bathroom.
+A: What.
+B: I don't know. This is a joke. It's not your fault.
+A: I know it's a secret.
+B: What.
+A: You know what I'm talking about.
+B: I know.
+A: You know you have a lot of people who you want to know.
+B: Yes I know you.
+A: I know.
+B: I know.
+A: You know.
+B: I know it.
+A: You don't know anything about it.
+B: Oh I don't know what you're talking about.
+A: I know. I know. I just thought it was going to be a fake.
+dialog 1
+A: What's your name?
+B: Mary.
+A: Oh.
+B: I didn't say that.
+A: I know.
+B: I know you don't have to tell me.
+A: You have a right to be your.
+B: I don't know what you're talking about.
+A: I know you do you know where are your parents.
+B: My mother's.
+A: I don't understand.
+B: I understand. You can't be a cop.
+A: I know you're not.
+B: I don't want to be.
+A: I don't want to be a good.
+B: But you don't know what you're talking about.
+A: I know.
+B: You know you have a good time.
+A: I am.
+B: I know. But I think it's time for you to know.
+A: We need to talk.
+dialog 2
+A: Hello
+B: Hello.
+A: Hello.
+B: Hello.
+A: Hello.
+B: Hello.
+A: Hello.
+B: Hello.
+A: Hello.
+B: Hello.
+A: Hi.
+B: Hi.
+A: Hi.
+B: Hi.
+A: Hi.
+B: Hi.
+A: Hi.
+B: Hi.
+A: Hi.
+B: Hi.
+A: Hi.
+dialog 3
+A: Thank God!  If I had to hear one more story about your coiffure
+B: Oh yes.
+A: And you know what I mean.
+B: Yeah.
+A: I mean it looks you.
+B: Like what.
+A: Like I and and this.
+B: I know.
+A: What do you think.
+B: I think it's a good idea.
+A: I don't know.
+B: You don't know.
+A: No.
+B: I know it's a lot of people don't know do it.
+A: Don't know.
+B: I don't know.
+A: You don't know.
+B: I know I know.
+A: You will.
+B: I will not.
+A: You will not.
+dialog 4
+A: You never wanted to go out with me, did you?
+B: No.
+A: I know. I'm sorry.
+B: It was a mistake.
+A: I know. It was the only of the it was the only.
+B: Well I didn't know that.
+A: You don't know what you're talking about.
+B: Look I know what you think I know about her.
+A: Are you a man.
+B: Yes.
+A: I don't know.
+B: You know.
+A: I know what you mean.
+B: I mean you don't have a choice.
+A: I don't know I just said it was nice.
+B: Oh really.
+A: Yeah.
+B: I know.
+A: You know you don't know.
+B: I know I know.
+A: You don't know.
+dialog 5
+A: I guess I thought I was protecting you.
+B: I'm glad you're here.
+A: I am.
+B: I know. I know.
+A: You don't know.
+B: No.
+A: Why not.
+B: I don't know.
+A: You don't know.
+B: I know I know.
+A: You don't know.
+B: No.
+A: Well then you should have told me that.
+B: I should have said that I wanted to be a friend.
+A: Is that a fact.
+B: It is.
+A: It is not.
+B: It is.
+A: I don't understand.
+B: You will.
+A: I have a job.
+dialog 6
+A: Forget his reputation.  Do you think we've got a plan or not?
+B: Did she say she was in the car for a month in the trunk.
+A: I think she was very.
+B: She did.
+A: She didn't say she did.
+B: She didn't say you were a good.
+A: I didn't know you were so bad.
+B: You don't know what you're talking about.
+A: Yes.
+B: I don't know.
+A: You don't know.
+B: I know.
+A: You know I know that.
+B: I know.
+A: You know you don't know.
+B: I know I know.
+A: I know you do know how to play a little like you.
+B: There.
+A: You got it.
+B: And you got it.
+A: Oh right. So you can have it.
+dialog 7
+A: You didn't have a choice?
+B: I have no idea.
+A: I think you should go now.
+B: I don't know what you're talking about.
+A: I know. You can't tell me that. You're a genius. You don't know.
+B: I don't know what you're talking about.
+A: I know you don't know. I know you don't know. I know you don't know. I don't.
+B: I know.
+A: I mean I can't talk to you.
+B: Oh.
+A: I mean it is me.
+B: I think it is.
+A: I think you should.
+B: I think so.
+A: You don't think so.
+B: You don't have to.
+A: I don't know.
+B: You don't know.
+A: I know what I know. I know. I know.
+B: You know what you mean.
+A: I mean did you do that.
+dialog 8
+A: Can you do me a favor?
+B: What.
+A: I just got a second. I was just here.
+B: What's the story.
+A: You know the difference.
+B: I know it.
+A: And you didn't tell me what happened.
+B: I did.
+A: You did.
+B: I did not.
+A: And you didn't tell me what did you think of the other.
+B: I told you. I was never going to tell you. I don't know.
+A: Is it.
+B: It's all right.
+A: It's not all right.
+B: It's all right.
+A: Thanks for the tip.
+B: No thanks.
+A: It's just a little.
+B: I don't think so. It's just that I don't know.
+A: You don't know.
+dialog 9
+A: So I have to have a motive to be with you?
+B: No you can't.
+A: Why not.
+B: I don't know.
+A: You don't know.
+B: I know.
+A: What do you think.
+B: I think it's a good idea.
+A: Why not.
+B: I don't know.
+A: Is it a bad thing to you.
+B: I guess so.
+A: Well I mean it looks like you know.
+B: No I mean I don't know I just thought it was nice.
+A: Well I know I don't know you and I know you don't know anything about it.
+B: It's the truth.
+A: I know. I know. I just thought it was nice.
+B: Thanks.
+A: I think it's time to get out of here.
+B: It's like a good it's it's a good.
+A: It's a big picture.
+dialog 10
+A: What's next?
+B: I don't know.
+A: You don't know.
+B: I know.
+A: You know what I'm saying.
+B: I know what you mean.
+A: I mean the little. The real are the one.
+B: Oh. That was the one.
+A: I didn't notice that.
+B: You didn't know what he did.
+A: I didn't know.
+B: Is there any other way to any the way.
+A: No. The thing are in my way.
+B: And.
+A: I don't know.
+B: Well I know you don't have to tell me.
+A: I'm sorry to hear that.
+B: I
+A: I You know.
+B: Yes.
+A: I have to go back to the hotel and you can always come with me.
+dialog 11
+A: You played for the Red Sox?
+B: I was just. I lost the truck.
+A: You look great. You look great.
+B: Thanks for the tip.
+A: You know it.
+B: I don't know.
+A: You don't know.
+B: No.
+A: I have to go back now.
+B: Okay.
+A: I don't know.
+B: You don't know.
+A: No.
+B: You don't have to.
+A: I don't know.
+B: I don't know.
+A: You don't know.
+B: I know her.
+A: You don't think I can help you.
+B: I don't know what you're talking about.
+A: I know you do know you don't know.
+dialog 12
+A: Are you saying that someone is paying you to be our maid and doesn't want us to know who he is?
+B: Yes.
+A: I don't know.
+B: You don't know.
+A: I know the difference.
+B: You don't know.
+A: I know you don't know. I know you don't know. I know you don't know.
+B: I know I know.
+A: I know.
+B: You know I mean you know I can't really tell you that you're not gonna get out of here.
+A: I'm not going to hurt you.
+B: You're not.
+A: No.
+B: No.
+A: No.
+B: I know. I know that you are very. I am not going to fight you.
+A: You don't understand. But you can't do it.
+B: Oh.
+A: I didn't say that.
+B: You didn't tell me.
+A: I didn't know you were a lie.
+dialog 13
+A: What did he say?
+B: He said that.
+A: Yes.
+B: I don't know what you're talking about.
+A: I know. You know that.
+B: No you're not.
+A: I'm not.
+B: Then what are you doing.
+A: I don't know.
+B: You don't know.
+A: I know her.
+B: You know you don't know who you are.
+A: I know.
+B: You know.
+A: I know you don't know where I can find him.
+B: You don't know him he's a hairdresser.
+A: I think he's a freak.
+B: I don't think so.
+A: Well that's for sure.
+B: Well it certainly is.
+A: It's all right. It's organic.
+dialog 14
+A: How do you do?
+B: I do.
+A: You know I don't like it you don't know.
+B: I know I know.
+A: You know.
+B: Yeah.
+A: You know you don't know.
+B: I know I know.
+A: You know you don't know.
+B: I know I know.
+A: You don't know.
+B: I know her.
+A: Of course you know her.
+B: No.
+A: I mean it looks you know.
+B: I don't know.
+A: You don't know.
+B: No.
+A: I know.
+B: I know.
+A: You do.
+dialog 15
+A: Where do you live?
+B: I was a by the day.
+A: You were a nurse and a nurse.
+B: I was in the neighborhood. They were all over the same. I was in the middle.
+A: The point dream.
+B: The point of my sexual.
+A: I'm sure you don't have to tell me that.
+B: I don't know what you're talking about.
+A: I know. You can't tell me anything.
+B: I know you.
+A: You know my back.
+B: What.
+A: I don't know.
+B: You don't know.
+A: I know you.
+B: You know you don't know who I am.
+A: I know you.
+B: And I know you do.
+A: And you know it.
+B: I don't know.
+A: You don't know.
+dialog 16
+A: If she can't pay, I'll have to foreclose, won't I?
+B: Yes she will.
+A: And what if she said the one.
+B: She didn't know anything about it.
+A: No.
+B: I have to go back to work.
+A: Are you kidding.
+B: No I distinctly remember: you walked out. I told you not to play it.
+A: I don't want it to be.
+B: Well you don't.
+A: No I don't think so.
+B: You don't have to.
+A: Yes I do.
+B: Good. Good.
+A: You know what I mean.
+B: I know what you mean.
+A: I mean you don't have to say anything.
+B: About what.
+A: About what and and she and.
+B: I think she's going to do this.
+A: You don't know how he is.
+dialog 17
+A: I want to see a movie.
+B: A girl.
+A: Why not.
+B: I don't know.
+A: You don't know.
+B: I know her.
+A: You know you don't know.
+B: I know I know.
+A: You know you don't know who I am.
+B: I know what you are.
+A: No I don't think you can do that.
+B: I can.
+A: I have to go back to work for you.
+B: You know where I can help you.
+A: You can do it.
+B: I don't know.
+A: You don't know.
+B: I know what you said.
+A: I know you did.
+B: I know I did.
+A: You were a soldier.
+dialog 18
+A: I didn't kill him! I had nothing to do with that, I tell you!
+B: You didn't tell me.
+A: No.
+B: You don't know.
+A: I didn't know you were so much.
+B: I know.
+A: You know.
+B: Yes.
+A: I don't know.
+B: You don't know.
+A: I know you don't know.
+B: I know.
+A: You know you don't know.
+B: I know I know.
+A: You know you don't know.
+B: I know I know.
+A: You know.
+B: I don't know.
+A: You don't know.
+B: I didn't know.
+A: I don't know.
+dialog 19
+A: What do you mean?
+B: I mean I can't tell you what I think is it.
+A: I think you should know. What's going on here.
+B: No I don't think so.
+A: You don't have to.
+B: I don't know.
+A: Well I don't know.
+B: You don't know.
+A: I know I know.
+B: You know you don't know who I am.
+A: I know what you are. I know what you are. I never told you. You don't know.
+B: Yes.
+A: I don't know.
+B: You don't know.
+A: I know her.
+B: I know. She was a little but she was a little little girl and she was all right.
+A: I don't know who she is.
+B: She she. But I have no idea.
+A: I don't think she has a new on the roof.
+B: She has a ring on the phone.
+A: You want to go.
+dialog 20
+A: For a celebrated bounder, that is an awful admission.
+B: I don't know.
+A: Well I don't know.
+B: Well I know you don't have to tell me.
+A: Why should i.
+B: I don't know.
+A: I don't know.
+B: You don't know.
+A: I don't know.
+B: You don't know.
+A: No.
+B: You don't know.
+A: I know.
+B: I know.
+A: You know you don't know.
+B: I don't know.
+A: You don't know.
+B: I know you.
+A: You know I don't like to talk about it.
+B: You know I just want.
+A: You know what I mean.
+dialog 21
+A: Besides, I never knew that any female could do this to you
+B: I can have it.
+A: I can't.
+B: I don't want to hear you.
+A: Come on.
+B: I can't go now.
+A: You can't.
+B: I know I know. I just thought it was a mistake.
+A: It just did.
+B: I don't know.
+A: You don't know.
+B: I know her.
+A: You know her.
+B: Yes.
+A: I have to go back to the church and you can always come with me.
+B: How.
+A: I don't know.
+B: I know you don't know.
+A: I know.
+B: You know.
+A: What.
+dialog 22
+A: Maybe. But I'm taking no chances.  Why, this kid's got a record.
+B: Why do you think I have a question.
+A: Oh I don't know.
+B: Well I know you don't have to tell me.
+A: I don't know.
+B: You don't know.
+A: I don't know.
+B: Well I know you don't know where to begin.
+A: My mouth.
+B: Oh my god. I can't even hear you.
+A: It's okay.
+B: I don't know you seem so sure.
+A: You don't look like a good.
+B: It's okay.
+A: I was just asking.
+B: What were you doing in my life.
+A: Well I just wanted to know if I was a good girl.
+B: You know a dog about a dog.
+A: No I didn't.
+B: You didn't ask for the time of it did you.
+A: Tell me.
+dialog 23
+A: Did you get the case for the securities?
+B: I don't know.
+A: You don't know.
+B: I know I know.
+A: I know.
+B: I know.
+A: I know.
+B: You know what I mean.
+A: I know I know. I know.
+B: You know you don't know anything about you.
+A: What.
+B: I don't know.
+A: You don't know.
+B: I know the answer is I know it I am not sure it will be true.
+A: So.
+B: She could have been a little too fast.
+A: She doesn't have a sense of humor.
+B: She was very in in her right.
+A: That's right.
+B: I know you don't understand.
+A: I know.
+dialog 24
+A: I'd like to take a crack at that guy.
+B: No one girl you know where they come from.
+A: I could have.
+B: I think I have to.
+A: I think we should leave now.
+B: I don't think we should go back.
+A: I don't want to be late for a while.
+B: Are you going to be a doctor.
+A: Yes.
+B: I don't know.
+A: You don't know.
+B: I know.
+A: I mean it.
+B: I know you do.
+A: And I know you do it.
+B: And then I don't like it either.
+A: But you don't know what you mean.
+B: I don't.
+A: You don't know.
+B: I know you don't have to know.
+A: Don't tell me what I know.
+dialog 25
+A: I didn't do it! I haven't got a gun!
+B: You got a gun.
+A: Of course not.
+B: Do you believe in god.
+A: No I don't think so.
+B: Well that's a relief.
+A: I think it's time to get out of here.
+B: It's like a good. It's a good.
+A: I do not.
+B: Then what do you do.
+A: I don't know.
+B: What.
+A: I just said you were a little girl.
+B: I'm a little you know.
+A: I don't know what you mean.
+B: I mean the point.
+A: The point the of is a pretty good start.
+B: I think so.
+A: A hundred.         
+B: I don't know.
+A: Is she in the bathroom.
+dialog 26
+A: BASTARDS! Come back here and face me!
+B: You have a good one.
+A: We will.
+B: I can't.
+A: You don't know.
+B: I know the difference.
+A: You know I know.
+B: I know you.
+A: You know my name.
+B: I know who you were in the bathroom.
+A: You didn't know.
+B: I didn't know I didn't know.
+A: What did you think of him.
+B: A little.
+A: I
+B: You know I can't help you.
+A: You know I can't.
+B: I know you.
+A: You know I don't like to talk about it.
+B: I know you do but I am sure you will.
+A: I understand.
+dialog 27
+A: I told you you'd get your money back.
+B: I didn't want to hear it.
+A: I don't want to hear it.
+B: I don't know what to say.
+A: I don't know.
+B: You don't know.
+A: I know I know.
+B: You know you have a lot of questions.
+A: Yeah.
+B: You know I don't know.
+A: Is it a bad idea.
+B: No. It was me.
+A: You don't know that.
+B: I know.
+A: You know.
+B: I know.
+A: You know you have a good time.
+B: I am.
+A: Yeah. Well I don't know.
+B: Well I guess i'll just have to ask you some questions about some new experience.
+A: Like I have a date on a boat.
+dialog 28
+A: Let's get back on the road. You gotta be at that convention in the morning.
+B: You better get on the phone okay.
+A: Sure. I'll catch you.
+B: I will not.
+A: You will not.
+B: What.
+A: I don't know.
+B: You don't know.
+A: I know.
+B: I know you don't.
+A: I know.
+B: I mean it looks you know.
+A: No I don't.
+B: I know you do.
+A: And you know it.
+B: I was just asking.
+A: I'll tell you what I am.
+B: I know you don't.
+A: I don't know.
+B: You don't know.
+A: I know I know. I know.
+dialog 29
+A: You ought to take up crap shooting. Talk about luck!
+B: What.
+A: I don't know. I just can't.
+B: What are you talking about.
+A: I just saw you in the elevator.
+B: Yes.
+A: And you didn't tell me what happened.
+B: I did.
+A: You did.
+B: Yes.
+A: I don't know.
+B: Well I don't know.
+A: Well I don't know.
+B: Well I don't know.
+A: The other night the one that was your first wife and she left me at the office.
+B: --.
+A: -- what.
+B: I --.
+A: You know what I'm talking about.
+B: I know.
+A: I know you don't.
+dialog 30
+A: Don't you think you should call a backup?
+B: Why don't you ask him.
+A: Why should I have a problem.
+B: It's a little.
+A: It's not the system. It's just that the.
+B: What.
+A: I don't know.
+B: You don't know.
+A: I didn't know.
+B: They didn't do anything.
+A: No. I didn't know that.
+B: And you didn't know that.
+A: No.
+B: You don't know.
+A: I know I know.
+B: I know you don't know.
+A: I know you.
+B: You know I don't know.
+A: I know I know.
+B: I know.
+A: I know you do.
+dialog 31
+A: Motherfucker you.
+B: I don't know.
+A: You don't know.
+B: No.
+A: You have no right to go to your.
+B: My god.
+A: The one.
+B: The one you know.
+A: Yeah.
+B: I know.
+A: I know.
+B: I know you don't.
+A: I don't know.
+B: You don't know.
+A: I know I know.
+B: You know you don't know.
+A: I know I know.
+B: You know.
+A: No.
+B: No.
+A: You don't know.
+dialog 32
+A: Machine learning.
+B: And a month ago.
+A: I didn't know what was that.
+B: You were a soldier.
+A: I was just.
+B: Who.
+A: The man the man who got to be more than me.
+B: You don't know what you're talking about.
+A: I know. I know. I know. I know.
+B: You don't know.
+A: I know her.
+B: I don't know.
+A: You don't know.
+B: I know but.
+A: What.
+B: You know what I mean.
+A: I know I know.
+B: You don't know.
+A: I don't know.
+B: I don't know.
+A: What dead.
+dialog 33
+A: Why you gotta talk about my moms?
+B: Well I didn't know you were a fucking.
+A: Hey fuck you.
+B: You know I didn't know you did.
+A: I know.
+B: You know.
+A: I know.
+B: You know you have a lot of questions.
+A: Yeah I do.
+B: You don't have to do anything.
+A: I don't know what to do.
+B: You know what I'm saying.
+A: I know what you said. But if you don't know what I'm going to do.
+B: I know I know I know I know.
+A: You don't know.
+B: I know her.
+A: She's a bit girl.
+B: Well I don't think so.
+A: You don't have to.
+B: I don't want to.
+A: Come on.
+dialog 34
+A: You've got to be kidding me ! His lazy ass couldn't win the special Olympics.
+B: I ain't seen you.
+A: I got a couple of months and a couple.
+B: I gotta go.
+A: I don't want to hear it.
+B: I don't know what you mean.
+A: I mean I don't know what you're talking about.
+B: Well I know you don't know. I know you don't know. I don't know.
+A: If I know I know what you mean.
+B: I know you do you know where I am.
+A: I know what you are.
+B: I know you don't trust me.
+A: I know you don't trust me.
+B: I know.
+A: I know you don't know.
+B: I know.
+A: You know.
+B: I didn't say anything.
+A: Then who did.
+B: You did.
+A: Yes.
+dialog 35
+A: Sir, this is not like firing any employee. We can't predict what will happen.
+B: He will not be happy.
+A: I'm not.
+B: You're not gonna hurt me.
+A: I never killed you.
+B: Then you did.
+A: I did. I didn't. You did.
+B: I did.
+A: You did.
+B: Yes.
+A: I don't know.
+B: You don't know.
+A: No.
+B: You don't know what you're talking about.
+A: I know.
+B: You know.
+A: I know you do you know where I am.
+B: Yes.
+A: I don't know.
+B: Well I know you don't know.
+A: I know I know.
+dialog 36
+A: I don't know. Maybe we should watch the tape to be sure.
+B: I don't know.
+A: I don't know.
+B: You don't know.
+A: No.
+B: You don't know.
+A: I know you.
+B: You know you don't know.
+A: I don't know.
+B: You don't know.
+A: I know.
+B: What.
+A: You know what I mean.
+B: I know I know.
+A: I know you don't know.
+B: Yes.
+A: I have to go back to work for you.
+B: You don't know. You can't do this.
+A: I know.
+B: What do you think.
+A: I think it's a good idea.
+dialog 37
+A: Listen man, I don't need this shit.
+B: You got a gun.
+A: What.
+B: I don't know.
+A: You don't know.
+B: I know I know.
+A: You know.
+B: I know you don't know.
+A: I don't know.
+B: You don't know.
+A: I know I know.
+B: You know you don't know.
+A: I know I know.
+B: I know.
+A: I don't know.
+B: You don't know.
+A: No.
+B: You don't have to.
+A: I don't want to be a cop.
+B: What do you want.
+A: I want to talk to you.
+dialog 38
+A: Will you stand up for me?
+B: Okay.
+A: I don't know.
+B: You don't know.
+A: I know you.
+B: You know I know you.
+A: I know.
+B: You know.
+A: Yeah.
+B: You don't look very good.
+A: I am not.
+B: You are a good.
+A: I guess I just got to say goodbye.
+B: You know I didn't know you had a good time.
+A: I had a beer.
+B: I thought that was for you.
+A: No it's not.
+B: Yes it is. And it's not what you think it's about.
+A: What do you mean.
+B: I mean I can't tell you how it is --.
+A: It's not important.
+dialog 39
+A: I had a feeling you would say something like that. So I brought us dinner.
+B: What are you talking about.
+A: You know what I'm talking about. I'm talking about my way.
+B: No no no no.
+A: Then why are you here.
+B: I don't know.
+A: You don't know.
+B: No.
+A: Then why do you say that.
+B: Because I know you were a lot of you.
+A: So that's what I was hoping for.
+B: I don't know what you're talking about.
+A: I know. You don't have to tell me.
+B: I'm not asking for anything.
+A: Just a little.
+B: Where are we going.
+A: To the bathroom.
+B: Oh yeah. Okay.
+A: Okay.
+B: Okay.
+A: I think we should go to the bathroom.
+dialog 40
+A: They can't be serious. The ship's in pieces and we've less than a skeleton aboard.
+B: Not unless you know about the fact.
+A: What's that.
+B: I don't know.
+A: You don't know.
+B: I know I know.
+A: You know I know you did it.
+B: I know I know it.
+A: I don't know what you mean.
+B: I don't want to be involved with anything and I can't do it.
+A: That's all. And you don't need to know what you're going to do.
+B: I'm going to try and get out of the way.
+A: No you can't.
+B: Oh I can't.
+A: I know you can't.
+B: I know.
+A: You know you have a lot of questions you don't know how to make it.
+B: I don't know. I do.
+A: What.
+B: The girl of the future.
+A: She is the only one.
+dialog 41
+A: How do you trun this on?
+B: The last and the power are the.
+A: The ships.
+B: I don't know how to make it.
+A: You don't have the guts to do.
+B: All right put in the middle of the night.
+A: I don't think we have that covered in that place.
+B: Sure thing in the morning there's no other way.
+A: No way.
+B: Oh god.
+A: What.
+B: I just got here. And I can't move. I can't even remember.
+A: I got a lot of things from here.
+B: I know.
+A: You know.
+B: Yeah.
+A: I mean it.
+B: You don't have to say anything.
+A: I don't know what you mean.
+B: I mean I don't know what you're talking about.
+A: You know I know.
+dialog 42
+A: Thank God it's Friday!
+B: It is. It is.
+A: It is.
+B: You don't have to be so sure.
+A: No. I mean it. You know it. I can't believe it. I can't even remember.
+B: Well I know I know it all right. I'll be right back.
+A: You don't have to tell me.
+B: I don't know.
+A: You don't know.
+B: No.
+A: I can't believe you did.
+B: I didn't say you did.
+A: I did.
+B: You did.
+A: Yes.
+B: I don't know.
+A: You don't know.
+B: No.
+A: I know.
+B: You know.
+A: Yes.
+dialog 43
+A: I don't give a shit!
+B: What.
+A: I don't know.
+B: You don't know.
+A: No.
+B: You don't know.
+A: I know her.
+B: You know I know. I know you.
+A: Yeah I know.
+B: I mean it is.
+A: Don't you think it's a little.
+B: It is.
+A: You don't know that for sure.
+B: No I didn't.
+A: I didn't say that.
+B: You didn't ask me.
+A: I didn't know you were a little.
+B: I was just going to be a little. A lot.
+A: A girl.
+B: Why not.
+A: I don't know.
+dialog 44
+A: WHAT KIND OF PLAN IS THAT!??
+B: I don't know.
+A: You don't know.
+B: I know I know.
+A: You know you don't know.
+B: I know I know.
+A: I know you don't know where the fuck are you.
+B: I don't know.
+A: You don't know.
+B: Yes.
+A: I don't know.
+B: You don't know.
+A: I know.
+B: You know.
+A: I know it.
+B: You don't know.
+A: I know I know. I know.
+B: You know you don't know.
+A: I know I know.
+B: I know you do.
+A: And I don't know what to do.
+dialog 45
+A: No weirder than a sharp, young, good-looking woman working in a lumberyard.
+B: I'm sorry about that. I'm sorry about that. I'm a little bit in my own. 
+A: No.
+B: You don't have to.
+A: I don't want to.
+B: I know you don't have to.
+A: I didn't say anything.
+B: I don't know what you mean.
+A: I don't know what you mean.
+B: I mean I don't know what you're talking about.
+A: You know.
+B: I know a lot about you.
+A: Me.
+B: Yes.
+A: I don't know.
+B: I know you did.
+A: I didn't know you were a big.
+B: I got some big stuff from the cars I can't see how much it hurts to you.
+A: Here.         
+B: And what do you do.
+A: I need to get a lawyer.
+dialog 46
+A: The witness need not be hesitant to say anything before this committee, as long as it's the truth.
+B: What is the question.
+A: I don't know.
+B: You don't know.
+A: No.
+B: I know you don't.
+A: I know.
+B: You know.
+A: I don't know.
+B: You don't know.
+A: I know.
+B: You know.
+A: Oh yes.
+B: I don't know.
+A: You don't know.
+B: I know.
+A: I know.
+B: I have a feeling feeling better to do.
+A: About what.
+B: About what.
+A: About the future.
+dialog 47
+A: I'm sure a lot of people down in L.A. are worried sick about you.
+B: Yeah. I'm sure about you.
+A: I am.
+B: I know.
+A: I know you do.
+B: And I don't know what to say.
+A: I don't know.
+B: You don't know.
+A: I know I know.
+B: You know.
+A: Well what kind of stuff.
+B: What kind of stuff.
+A: Huh oh that and uh and.
+B: They just said it was nice.
+A: Oh. Well then it looks like you did.
+B: No. I didn't mean anything.
+A: I don't know what you mean.
+B: I mean what you said. I thought you said you were going to have to take me.
+A: I don't remember.
+B: You don't know.
+A: I know.
+dialog 48
+A: Find the rockets.  If they're guarded, kill the men guarding them.
+B: But they are.
+A: Well yes -- yes -- yes --.
+B: -- but --.
+A: -- it gets to be the last time I saw it in the morning --.
+B: -- the water the body.
+A: I don't know what to say.
+B: I don't know anything.
+A: You don't know.
+B: I don't know.
+A: You don't know.
+B: I know.
+A: I have a feeling of my own.
+B: Do. You want to go to the for a second.
+A: No -- no. No. Uh. I was just wondering if it was a mistake it wasn't a.
+B: Oh a man.
+A: Yes.
+B: I don't know.
+A: You don't know.
+B: No.
+A: You didn't.
+dialog 49
+A: what single thing would you want the next President of this country to do most?
+B: I don't know. I just don't know what to do.
+A: You don't have to be so bad.
+B: You don't have to.
+A: I know you can but you can.
+B: I can't.
+A: You don't have to.
+B: I don't want to be a cop.
+A: I know.
+B: I know. But I think we should go back.
+A: You're right.
+B: I know I know. I know.
+A: You know.
+B: What.
+A: I don't know.
+B: You don't know.
+A: I know I know.
+B: You know you don't know.
+A: Know what.
+B: The one you told me to do the job.
+A: I know.
+dialog 50
+A: I forgot to get the Coca-Cola.
+B: What do you want.
+A: I want to talk to you.
+B: I can't do that.
+A: Oh I don't think you can <u>do<u> that.
+B: I don't know what you're talking about.
+A: I know you do know how to you.
+B: I know you do.
+A: Then don't tell me.
+B: You know that.
+A: I didn't say he was a.
+B: A guy huh.
+A: Yeah.
+B: I think you should go home.
+A: I don't think so.
+B: Well that's a relief.
+A: I don't know how you got it. How do you know.
+B: I told you I didn't know you were here.
+A: What are you talking about.
+B: I don't know.
+A: You don't know.
+dialog 51
+A: How about you gradution thesis?
+B: Oh yeah. You want to go in.
+A: Yes.
+B: I don't know.
+A: You don't know.
+B: I know I know. I know.
+A: You know.
+B: I know.
+A: I know the feeling. I know all that. I said it. It's a good idea.
+B: What kind of a bad guy.
+A: What.
+B: I can't do this.
+A: I don't know.
+B: You don't know.
+A: I know you.
+B: I don't know.
+A: Well I don't know.
+B: I'm just trying to find out what's happening to you.
+A: I'm sorry but I can't make it.
+B: You don't have to do anything.
+A: Don't be silly. I'll be back in a minute.
