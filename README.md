@@ -6,23 +6,23 @@ This is a chatbot trained by __seq2seq__ and __reinforcement learning__.
 
 * __seq2seq__
 
-Seq2seq is a classical model that its input and output are both sequence.
+Seq2seq is a classical model for structured learning, its input and output are both sequence
 
 The vanilla seq2seq model is described in NIPS 2014 paper Sequence to [Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215), the encoder and the decoder are seperated
 
-My seq2seq model is constructed with 2 LSTMs, similar to the one described in ICCV 2015 paper [Sequence to Sequence -- Video to Text](https://arxiv.org/abs/1505.00487), the encoder and the decoder share weights
+My seq2seq model constructed with 2 LSTMs, similar to the one described in ICCV 2015 paper [Sequence to Sequence -- Video to Text](https://arxiv.org/abs/1505.00487), the encoder and the decoder share weights
 
 * __RL__
 
-After training chatbot with enough epochs, I use one kind of RL techniques called policy gradient, to train chatbot.
+After training chatbot with enough epochs, I use one kind of RL techniques called policy gradient, to train chatbot
 
-By doing this, the chatbot can generate more interesting response, correspond to the reward function.
+By doing this, the chatbot can generate more interesting response, correspond to the reward function
 
 My reward function is similar to the one described in EMNLP 2016 paper <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a>
 
 
 
-## chatbot's results
+## Chatbot results
 
 Let me show you some chatbot's results:
 
@@ -75,7 +75,7 @@ neural networks' configs of those results are described in the filename
 
 
 
-## simulate a dialog by pre-trained model
+## Simulate dialogs by pre-trained model
 Are you amazed at the result of the chatbot? :D
 
 You can generate those amazing dialogs by your own!
@@ -125,8 +125,8 @@ the output file, type any filename you want
 
 
 
-## generate response by pre-trained model
-If you want chatbot to generate only a single response
+## Generate responses by pre-trained model
+If you want chatbot to generate only a single response for each question
 
 Follow the instructions below:
 
@@ -161,7 +161,7 @@ the output file, type any filename you want
 
 
 
-## train chatbot from scratch
+## Train chatbot from scratch
 I trained my chatbot with python2.7.
 
 If you want to train the chatbot from scratch
