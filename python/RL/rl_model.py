@@ -140,8 +140,6 @@ class PolicyGradient_chatbot():
                 with tf.device('/cpu:0'):
                     current_embed = tf.nn.embedding_lookup(self.Wemb, tf.ones([self.batch_size], dtype=tf.int64))
 
-            # print('step {} current_embed.shape {}'.format(i, current_embed.get_shape()))
-
             with tf.variable_scope("LSTM1"):
                 output1, state1 = self.lstm1(padding, state1)
 
