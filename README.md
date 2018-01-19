@@ -244,12 +244,12 @@ then change the method to 'pg' to optimize the reward function
 *you don't need to change any setting about reversed model if you use pre-trained reversed model*
 
 #### Step6-1: test a RL model
-Let's show some results of RL model, and find the different from seq2seq model :)
+Let's generate some results of RL model, and find the different from seq2seq model :)
 ```bash
 ./script/test_RL.sh <PATH TO MODEL> <INPUT FILE> <OUTPUT FILE>
 ```
 
-#### Step6-2: simulate a dialog
+#### Step6-2: generate a dialog
 And show some dialog results from RL model!
 ```bash
 ./script/simulate.sh <PATH TO MODEL> <SIMULATE TYPE> <INPUT FILE> <OUTPUT FILE>
