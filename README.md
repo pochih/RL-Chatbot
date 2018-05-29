@@ -273,4 +273,4 @@ __if you choose 2, chatbot will consider last two sentences (one from user, and 
 - Python3 (for data_parser.py) & Python2.7 (for others)
 
 ## Author
-Po-Chih Huang / [@brianhuang1019](http://brianhuang1019.github.io/)
+Po-Chih Huang / [@pochih](http://pochih.github.io/)
