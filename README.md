@@ -8,17 +8,17 @@ This is a chatbot trained by __seq2seq__ and __reinforcement learning__.
 
 Seq2seq is a classical model for structured learning, its input and output are both sequence
 
-The vanilla seq2seq model is described in NIPS '14 paper Sequence to [Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215), the encoder and the decoder are seperated
+The vanilla seq2seq model is described in a NIPS '14 paper [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215), the encoder and the decoder are seperated
 
-My seq2seq model constructed with 2 LSTMs, similar to the one described in ICCV '15 paper [Sequence to Sequence -- Video to Text](https://arxiv.org/abs/1505.00487), the encoder and the decoder share weights
+The seq2seq model in this repository is constructed with 2 LSTMs, similar to the one described in an ICCV '15 paper [Sequence to Sequence -- Video to Text](https://arxiv.org/abs/1505.00487), the encoder and the decoder share same weights
 
 * __RL__
 
-After training chatbot with enough epochs, I use one kind of RL techniques called policy gradient, to train chatbot
+After training chatbot with enough epochs, I use a RL technique called policy gradient to further improve the chatbot
 
-By doing this, the chatbot can generate more interesting response, correspond to the reward function
+By doing this, the chatbot can generate more interesting response with regard to the reward function
 
-My reward function is similar to the one described in EMNLP '16 paper <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a>
+My reward function is similar to the one described in an EMNLP '16 paper <a href="https://arxiv.org/abs/1606.01541" target="_blank">Deep Reinforcement Learning for Dialogue Generation</a>
 
 
 
